@@ -23,11 +23,11 @@ export function ContactList() {
   }
   return (
     <ul className={css.list}>
-      {contactsAfterFiltr.map(({ id, name, phone }) => {
+      {contactsAfterFiltr.map(({ id, name, number }) => {
         return (
           <li key={id} className={css.item}>
             <span>
-              {name} : {phone}
+              {name} : {number}
             </span>
             <Button
               variant="contained"
